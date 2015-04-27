@@ -26,5 +26,6 @@ clean:
 	rm -f $(source)_draft.{aux,lof,log,lot,toc,blg,dvi,tns,synctex.gz,html,4ct,4tc,lg,tmp,xref,css,idv,idx}
 	rm -f .DS_Store
 
-
+bibgrep:
+	bibtool -x $(source).aux -o $(source).bib
 
