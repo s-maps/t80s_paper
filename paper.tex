@@ -1,0 +1,203 @@
+%%
+%% Beginning of file 'sample.tex'
+%%
+%% Modified 2005 December 5
+%%
+%% This is a sample manuscript marked up using the
+%% AASTeX v5.x LaTeX 2e macros.
+
+%% The first piece of markup in an AASTeX v5.x document
+%% is the \documentclass command. LaTeX will ignore
+%% any data that comes before this command.
+
+%% The command below calls the preprint style
+%% which will produce a one-column, single-spaced document.
+%% Examples of commands for other substyles follow. Use
+%% whichever is most appropriate for your purposes.
+%%
+\documentclass[12pt,preprint]{aastex}
+
+%\usepackage{aas_macros}
+
+\usepackage{natbib}
+\bibliographystyle{apj}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{color}
+
+%% manuscript produces a one-column, double-spaced document:
+
+%% \documentclass[manuscript]{aastex}
+
+%% preprint2 produces a double-column, single-spaced document:
+
+%% \documentclass[preprint2]{aastex}
+
+%% Sometimes a paper's abstract is too long to fit on the
+%% title page in preprint2 mode. When that is the case,
+%% use the longabstract style option.
+
+%% \documentclass[preprint2,longabstract]{aastex}
+
+%% If you want to create your own macros, you can do so
+%% using \newcommand. Your macros should appear before
+%% the \begin{document} command.
+%%
+%% If you are submitting to a journal that translates manuscripts
+%% into SGML, you need to follow certain guidelines when preparing
+%% your macros. See the AASTeX v5.x Author Guide
+%% for information.
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand{\myemail}{skywalker@galaxy.far.far.away}
+
+%% You can insert a short comment on the title page using the command below.
+
+\slugcomment{To appear in PASP}
+
+%% If you wish, you may supply running head information, although
+%% this information may be modified by the editorial offices.
+%% The left head contains a list of authors,
+%% usually a maximum of three (otherwise use et al.).  The right
+%% head is a modified title of up to roughly 44 characters.
+%% Running heads will not print in the manuscript style.
+
+\shorttitle{A new robotic facility to the Brazilian astronomical community}
+\shortauthors{T80S team}
+
+%% This is the end of the preamble.  Indicate the beginning of the
+%% paper itself with \begin{document}.
+
+\begin{document}
+
+%% LaTeX will automatically break titles if they run longer than
+%% one line. However, you may use \\ to force a line break if
+%% you desire.
+
+\title{A new robotic facility to the Brazilian astronomical community}
+
+%% Use \author, \affil, and the \and command to format
+%% author and affiliation information.
+%% Note that \email has replaced the old \authoremail command
+%% from AASTeX v4.0. You can use \email to mark an email address
+%% anywhere in the paper, not just in the front matter.
+%% As in the title, use \\ to force line breaks.
+
+\author{T80S Team \altaffilmark{1,2,3} and James Brown\altaffilmark{1}}
+\affil{Astronomy Department, University of California,
+    Berkeley, CA 94720}
+
+\author{Elvis Costello\altaffilmark{4,5}}
+\affil{National Optical Astronomy Observatories, Tucson, AZ 85719}
+\email{aastex-help@aas.org}
+
+\and
+
+\author{John Doe\altaffilmark{5}}
+\affil{Space Telescope Science Institute, Baltimore, MD 21218}
+
+%% Notice that each of these authors has alternate affiliations, which
+%% are identified by the \altaffilmark after each name.  Specify alternate
+%% affiliation information with \altaffiltext, with one command per each
+%% affiliation.
+
+\altaffiltext{1}{Visiting Astronomer, Cerro Tololo Inter-American Observatory.
+CTIO is operated by AURA, Inc.\ under contract to the National Science
+Foundation.}
+\altaffiltext{2}{Society of Fellows, Harvard University.}
+\altaffiltext{3}{present address: Center for Astrophysics,
+    60 Garden Street, Cambridge, MA 02138}
+\altaffiltext{4}{Visiting Programmer, Space Telescope Science Institute}
+\altaffiltext{5}{Patron, Alonso's Bar and Grill}
+
+%% Mark off your abstract in the ``abstract'' environment. In the manuscript
+%% style, abstract will output a Received/Accepted line after the
+%% title and affiliation information. No date will appear since the author
+%% does not have this information. The dates will be filled in by the
+%% editorial office after submission.
+
+\begin{abstract}
+
+The main goal of this application is to fund the acquisition of a 0.8-m robotic telescope to be installed at the Cerro Tololo Interamerican Observatory (CTIO) for use by the astronomical communities of Brazil (90\% of the time) and Chile (10\% of the time). The telescope will be used, at first light, with a 9k x 9k pixel CCD camera, delivering a-50 x 50 arcmin2 field of view with a scale of 0.27 arcsec/pixel. It will be dedicated to long-term projects, targets of opportunity and follow-up of LSST discoveries. Particular attention will be placed on the selection of a sample of type Ia supemovae, using a set of contiguous narrow-band filters, and the study of variable stars using broader band filters. This new facility will also complement the science goals of the Brazilian l-m robotic telescope IMPACTON, extending its planned search for asteroids to the whole of the Southem hemisphere. This project is being developed in a c10se collaboration among the University of São Paulo (IAGIUSP), Inslituto Nacional de Pesquisas Espaciais (INPE), Observatório Nacional (ON) and Laboratório Nacional de Astrofísica (LNA). CTIO was chosen as the location for this robotic telescope because Brazil has access to two other telescopes on the same site, SOAR and Gemini; these three facilities will be highly complementary. The choice was also made in consideration of the infrastructure already available and the support from CTIO for operations and maintenance (on a cost recovery basis, see letter enc10sed from Dr. Chris Smith). If this proposal is approved and the robotic telescope is installed, its operation and maintenance will be assured by ON, through payment to NOAO, as stated in the letter by the director of ON, Dr. Sergio Fontes. As required by FAPESP, we are also attaching to this application a document approved by the highest Board of the PI's institute, describing the system to be used for distribution of observing time, similar to that adopted for all the other telescopes in Brazil and most telescopes worldwide, with the caveat that the robotic telescope will be mainly dedicated to a few long-term projects of high scientific interest to the community, as judged on an on-going basis. (AU)
+
+\end{abstract}
+
+%% Keywords should appear after the \end{abstract} command. The uncommented
+%% example has been keyed in ApJ style. See the instructions to authors
+%% for the journal to which you are submitting your paper to determine
+%% what keyword punctuation is appropriate.
+
+\keywords{globular clusters: general --- globular clusters: individual(NGC 6397,
+NGC 6624, NGC 7078, Terzan 8}
+
+
+\section{Introduction}
+
+Telescopes are beautiful! \citep{Benitez.etal.2014a}
+
+
+\section{T80S site}
+
+{\bf \color{red} Describe T80S site location and characteristics (seeing, weather, etc). Put a picture of the building?}
+
+The T80-South telescope is situated near the summit of Cerro Tololo in central Chile, at an altitude of 2,207 m, at latitude -30:10:10.78 and longitude -70:48:23.49. T80S  is
+developing in partnership with the Brazilian Ministry of Science and Technology, S\~ao Paulo Research Foundation (FAPESP, Portuguese: Funda\c c\~ao de Amparo ‡ Pesquisa do Estado de S\~ao Paulo) and National Observatory (ON, Portuguese: Observat\'orio Nacional). Cerro Tololo is one of the best observing site in the world with a weather statistics of: 60$\%$ photometric, 30$\%$ usable and 10$\%$ cloudy. The median free-atmosphere seeing $\epsilon_f$ (all layers above 500m) is 0.55 arcsec, in 10 per cent of cases it is better than 0.28
+arcsec, but it is practically never better than 0.15 arcsec \citep{Tokovinin.Baumont.Vasquez.2003a}.
+
+
+\section{Telescope Design}
+{\bf \color{red} Describe the telescope mount and optics. Describe the two operational modes: camera plus filter wheel and camera plus polarimeter. Show that we can slew to targets in less than 1m30s and we are only limited by the dome.}
+
+\subsection{Mount}
+
+\subsection{Optics}
+
+\subsection{Camera}
+
+\subsection{Polarimeter}
+
+\subsection{Rapid response cabapibility}
+{\bf \color{red} Figure: Dome speed, telescope speed}
+
+\section{Observatory control system}
+{\bf \color{red} Introduce chimera and its various modules. Emphasize that it is publicly available on \url{https://github.com/astroufsc/chimera/}. }
+
+\subsection{Gamma ray bursts follow-up}
+{\bf \color{red} People can point to the GRBs faster than us, but not with our FoV (which means that we can go not only for SWIFT GRBs, but also to the FERMI ones. Also, we have a polarimeter. This is what makes us unique.}
+
+\section{Data storage and distribution}
+{\bf \color{red} Put here the Datacenter infrastructure description. Put too the data transmission routes and all the effort of Paula on doing this.}
+
+\subsection{Datacenter description}
+{\bf \color{red} Describe the computers, the operating systems and so on.}
+
+\subsection{Data flow}
+{\bf \color{red} How data flows from the camera to the ``mesa do trabalhador''?}
+
+\section{Globular cluster observations?}
+{\bf \color{red} Give a first show of what we are capable of. Some nice field picture and some preliminary data reduction showing that we can be accurate photometrically.}
+
+\section{Some early results on extragalactic astronomy?}
+
+\acknowledgments
+
+We are grateful to V. Barger, T. Han, and R. J. N. Phillips for
+doing the math in section.
+More information on the AASTeX macros package is available \\ at
+\url{http://www.aas.org/publications/aastex}.
+For technical support, please write to
+\email{aastex-help@aas.org}.
+
+
+\appendix
+
+\section{Appendix material}
+
+
+\bibliography{paper}
+
+\clearpage
+
+\end{document}
+
+%%
+%% End of file `sample.tex'.
